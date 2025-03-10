@@ -1,0 +1,25 @@
+plugins {
+    id 'java'  // Apply the Java plugin
+    id 'application'
+}
+
+repositories {
+    mavenCentral()  // Allow dependencies to be fetched from Maven Central
+}
+
+dependencies {
+    implementation 'com.maxmind.geoip2:geoip2:2.15.0'  // Add GeoIP2 dependency
+    implementation 'com.github.ua-parser:uap-java:1.6.1'  // Add UA Parser dependency
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+}
+
+
+application {
+    mainClass = 'LogAnalyzer'  // Make sure this is the correct path to your LogAnalyzer class
+}
+
+test {
+    useJUnitPlatform()  // Enable JUnit 5 platform
+}
