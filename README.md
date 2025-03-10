@@ -26,6 +26,12 @@ LogAnalyzer is a backend application designed to process and analyze log files. 
 
 ### Setup Steps
 
+- Clone the repository:
+```sh
+git clone https://github.com/mocharish/log-analyzer.git
+cd log-analyzer
+```
+
 - Build the project:
    ```sh
    gradle build
